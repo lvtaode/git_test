@@ -1,0 +1,10 @@
+/**app.wxss**/
+page{
+  font-size: 30rpx;
+  font-family: "新宋体";
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+} 

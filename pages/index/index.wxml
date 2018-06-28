@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<view class='banner'>
+  <image src='/images/banner.png'></image>
+</view>
+<!--外部环境图展示  -->
+<view class='nav'>
+  <view class='title'>{{outdoor.name}}</view>
+  <view style='margin-top:20rpx;'>地处西安市南三环外丈八六路南头  地理位置优越  交通方便</view>
+</view>
+<!--图片列表  -->
+<view class='container'>
+    <view class='box' wx:for="{{outdoor.pics}}" wx:key="1">
+        <image src='https://zhang.yxwlit.com/public/uploads/{{item.pic}}' data-src='https://zhang.yxwlit.com/public/uploads/{{item.pic}}' bindtap='bigImg'></image>
+        <view>{{item.title}}</view>
+    </view> 
+</view>
+
+<!--内部环境图展示  -->
+<view class='nav'>
+  <view class='title'>{{inside.name}}</view>
+  <view style='margin-top:20rpx;'>设计精致 面积4000㎡ 可分割 水电齐全 包括动力电和消防配套设施</view>
+</view>
+<!--图片列表  -->
+<view class='container'>
+    <view class='box' wx:for="{{inside.pics}}" wx:key="1">
+       <image src='https://zhang.yxwlit.com/public/uploads/{{item.pic}}' data-src='https://zhang.yxwlit.com/public/uploads/{{item.pic}}' bindtap='bigImg'></image>
+        <view>{{item.title}}</view>
+    </view> 
+</view>
+
+<!--住宿 办公环境图展示  -->
+<view class='nav'>
+  <view class='title'>{{office.name}}</view>
+  <view style='margin-top:20rpx;'>办公区、住房区共50多间 带厨房、卫生间、网线 水电齐全</view>
+</view>
+<!--图片列表  -->
+<view class='container'>
+    <view class='box' wx:for="{{office.pics}}" wx:key="1">
+        <image src='https://zhang.yxwlit.com/public/uploads/{{item.pic}}' data-src='https://zhang.yxwlit.com/public/uploads/{{item.pic}}' bindtap='bigImg'></image>
+        <view>{{item.title}}</view>
+    </view> 
+</view>
+

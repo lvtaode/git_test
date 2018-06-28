@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/company/company",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "transparent",
+    "navigationBarTitleText": "永鑫仓储",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/images/main.png",
+      "selectedIconPath": "/images/main_h.png"
+    },
+    {
+      "pagePath": "pages/company/company",
+      "text": "公司简介",
+      "iconPath": "/images/intro.png",
+      "selectedIconPath": "/images/intro_h.png"
+    }
+    ],
+    "color": "#000",
+    "selectedColor": "#fff",
+    "fontSize":"40px",
+    "backgroundColor": "#1C7EC6"
+  }
+}

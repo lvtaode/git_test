@@ -1,0 +1,21 @@
+<!--pages/company/company.wxml-->
+<view class="item">仓库介绍</view>
+<view style='font-size:30rpx;line-height:60rpx;'>{{contact.web_info}}
+</view>
+<view style='text-align:center;margin:30rpx 0 20rpx;'>
+    <image src='/images/phone.png' style='width:200rpx;height:40rpx'></image>
+</view>
+<view class="item">联系我们</view>
+<view class='msg'><text style='color:#1274BC;font-weight:bold;'>联  系  人:</text>{{contact.web_name}}</view>
+<view class='msg'><text style='color:#1274BC;font-weight:bold;'>公司名称:</text>{{contact.web_title}}</view>
+<view class='msg'><text style='color:#1274BC;font-weight:bold;'>联系电话:</text><text bindtap='call' data-call="{{contact.web_phone}}">{{contact.web_phone}}</text>/<text bindtap='call' data-call="{{contact.web_mobile}}">{{contact.web_mobile}}</text></view>
+<view class='msg'><text style='color:#1274BC;font-weight:bold;'>公司地址:</text>西安市{{contact.web_addresss}}</view>
+<!-- <view class='msg'>公司邮箱:6056@qq.com</view> -->
+
+<view  bindtap="nav" style='color:#1C7EC6;font-size:32rpx;text-align:center;margin:20rpx 0;'>(点击可打开导航)</view>
+<view style='margin:20rpx 0 40rpx;  '>
+    <map bindtap="nav"   id="map" longitude="108.856338" latitude=" 34.180823" scale="14" markers='{{markers}}' style="width: 100%; height: 500rpx;">
+    </map>
+</view>
+
+
